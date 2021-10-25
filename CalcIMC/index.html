@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="calculadora">
+            <div class="title"> IMC - Calculadora </div>
+                <div class="input">
+                <label>Altura:</label>
+                <input type="number" id='altura'>
+            </div>
+            <div class="input">
+                <label>Peso:</label>
+                <input type="number" id='peso'>
+            </div>
+            <button id='calcular'>Calcular</button>
+            <div class="result" id='resultado'></div>
+        </div>
+        <div class="ImcTabela">
+            <div class="Tabela">
+                <table>
+                    <tr style="color: black; background-color: rgb(75, 72, 245);">
+                        <td>Classificação</td>
+                        <td>Imc</td>   
+                    </tr>
+                    <tr style="color: rgb(23, 23, 56); background-color: white;">
+                        <td>Abaixo do peso</td>
+                        <td>Abaixo 18,5</td>
+                    </tr>
+                    <tr style="color: rgb(23, 23, 56); background-color: rgb(218, 218, 218);">
+                        <td>Peso normal</td>
+                        <td>18,5 - 24,9</td>                 
+                    </tr>
+                    <tr style="color: rgb(23, 23, 56); background-color: rgb(211, 211, 211);">
+                        <td>Levemente acima do peso</td>
+                        <td>25 - 29,9</td>             
+                    </tr>
+                    <tr style="color: rgb(23, 23, 56); background-color: white;">
+                        <td>Obesidade grau I</td>
+                        <td>30 - 34,9</td>                   
+                    </tr>
+                    <tr style="color: rgb(23, 23, 56); background-color: rgb(218, 218, 218);;">
+                        <td>Obesidade grau II</td>
+                        <td>35 - 39,9</td>                    
+                    </tr>
+                    <tr style="color: rgb(23, 23, 56); background-color: rgb(211, 211, 211);">
+                        <td>Obesidade grau III / Mórbida</td>
+                        <td>Maior ou igual 40</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
